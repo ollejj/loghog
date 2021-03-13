@@ -6,8 +6,8 @@ let loghog = (options) => {
         filePath: options?.path
     };
 
-    this.event;
-    this.currentFileData;
+    this.event = '';
+    this.currentFileData = '';
 
     return async (req, res, next) => {
         this.event = `${new Date().toLocaleString()} -> ${req.originalUrl} \n`;
