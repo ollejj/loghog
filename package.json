@@ -1,11 +1,12 @@
 {
   "name": "loghog",
   "version": "1.0.3",
-  "description": "",
-  "main": "index.js",
+  "main": "loghog.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": ["api-logger", "log", "express", "http-requests", "simple"],
+  "author": "Olle Johansson",
+  "license": "ISC",
+  "description": "A simple HTTP-request logger written for ExpressJS"
 }
