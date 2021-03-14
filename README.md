@@ -14,9 +14,8 @@ app.use(loghog({
     path: './log.txt'
 }));
 
-//You can also use:
+//You can also use the following code to output directly to the console.
 app.use(loghog());
-//to output directly to the console.
 ```
 
 ## Author
