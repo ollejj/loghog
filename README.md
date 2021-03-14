@@ -1,6 +1,6 @@
 # loghog.js
 
-WORK IN PROGRESS
+A very simple package to assist your API-request logging needs!
 
 ## Installation
 `npm install loghog`
@@ -11,16 +11,12 @@ const express = require('express');
 const app = express();
 
 app.use(loghog({
-    path: './events.txt'
+    path: './log.txt'
 }));
 
-/*
-You can also use:
-*/
+//You can also use:
 app.use(loghog());
-/*
-to output directly to Console
-*/
+//to output directly to the console.
 ```
 
 ## Author
