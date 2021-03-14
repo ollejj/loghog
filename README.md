@@ -11,8 +11,7 @@ const express = require('express');
 const app = express();
 
 app.use(loghog({
-    path: './log.txt',
-    split: true
+    path: './log.txt'
 }));
 
 //You can also use the following code to output directly to the console.
