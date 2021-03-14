@@ -3,7 +3,7 @@ const { readFileSync, writeFileSync, existsSync } = require('fs');
 let loghog = (options) => {
 
     this.options = {
-        filePath: options?.path
+        filePath: options.path
     };
 
     this.event = '';
