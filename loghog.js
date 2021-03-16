@@ -3,13 +3,14 @@ const { readFileSync, writeFileSync, existsSync } = require('fs');
 let loghog = (options) => {
 
     this.options = {
-        filePath: options.path
+        filePath: options?.path
     };
 
     this.event = '';
     this.currentFileData = '';
 
     return async (req, res, next) => {
+        
         this.event = `${new Date().toLocaleString()} -> ${req.method}: ${req.originalUrl}`;
 
         if (this.options.filePath) {
